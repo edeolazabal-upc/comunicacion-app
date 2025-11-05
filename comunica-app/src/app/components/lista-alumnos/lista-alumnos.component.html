@@ -1,0 +1,7 @@
+<h2>Lista de Alumnos</h2>
+<ul>
+  <li *ngFor="let alumno of alumnoService.alumnos()">
+    {{ alumno.nombre }} ({{ alumno.edad }} años) - {{ alumno.carrera }}
+    <button (click)="editarAlumno(alumno.id)">Editar</button>
+  </li>
+</ul>
